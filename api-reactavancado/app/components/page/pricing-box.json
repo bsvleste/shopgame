@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_page_pricing_boxes",
+  "info": {
+    "name": "pricingBox",
+    "icon": "comment-dollar"
+  },
+  "options": {},
+  "attributes": {
+    "totalPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "numberInstallments": {
+      "type": "integer",
+      "required": true
+    },
+    "priceInstallments": {
+      "type": "decimal",
+      "required": true
+    },
+    "benefits": {
+      "type": "richtext",
+      "default": "create items as  bullets list items",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_page_stock_tenis",
+  "info": {
+    "name": "stockTenis",
+    "icon": "shopping-basket"
+  },
+  "options": {},
+  "attributes": {
+    "stock": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
