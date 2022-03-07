@@ -1,3 +1,5 @@
+import Main from '../components/Main';
+
 export default function Home() {
-  return <h1>OLa mundo</h1>;
+  return <Main />;
 }
