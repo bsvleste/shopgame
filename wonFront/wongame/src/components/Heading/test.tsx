@@ -28,7 +28,7 @@ describe('Heading', () => {
     //selecionar o elemento a ser testado  'screen' (queries)
     //expect
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
-      'border-left': '0.7rem solid #3CD3C1'
+      'border-left': '0.7rem solid #F231A5'
     });
   });
   it('shoud render a border heading when pass true', () => {
@@ -39,6 +39,22 @@ describe('Heading', () => {
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyleRule(
       'border-bottom',
       '0.5rem solid #F231A5',
+      {
+        modifier: '::after'
+      }
+    );
+  });
+  it('shoud render a heading with a small zise', () => {
+    //renderizar o componentes 'render'
+    //selecionar o elemento a ser testado  'screen' (queries)
+    renderWhitTheme(<Heading size="small">Won Games</Heading>);
+    //expect
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
+      'font-size': '1.6rem'
+    });
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyleRule(
+      'width',
+      '3rem',
       {
         modifier: '::after'
       }

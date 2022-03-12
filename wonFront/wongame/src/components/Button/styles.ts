@@ -12,8 +12,7 @@ const wrapperModifiers = {
     align-items: center;
     justify-content: center;
     svg {
-      width: 1.5rem;
-      & + span {
+      width: 1.5rem & + span {
         margin-left: ${theme.spacings.xxsmall};
       }
     }
@@ -44,7 +43,9 @@ export const Wrapper = styled.button<WrapperProps>`
     cursor: pointer;
     border-radius: ${theme.border.radius};
     padding: ${theme.spacings.xxsmall};
-
+    &:hover {
+      background: linear-gradient(180deg, #e35565 0%, #d958a6 50%u);
+    }
     ${!!size && wrapperModifiers[size](theme)};
     ${!!fullWidth && wrapperModifiers.fullWidth()};
     ${!!hasIcon && wrapperModifiers.withIcon(theme)};
