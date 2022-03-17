@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { renderWhitTheme } from 'utils/test/helpers';
 import { AddShoppingCart } from '@styled-icons/material/AddShoppingCart';
 import Button from '.';
@@ -40,5 +40,17 @@ describe('Button', () => {
     );
     expect(screen.getByText(/Buy now/i)).toBeInTheDocument();
     expect(screen.getByTestId('icon')).toBeInTheDocument();
+  });
+  it('should render Button as link', () => {
+    const { debug, container } = renderWhitTheme(
+      <Button as="a" href="/link">
+        Buy now
+      </Button>
+    );
+    debug(container);
+    expect(screen.getByRole('link', { name: /buy now/i })).toHaveAttribute(
+      'href',
+      '/link'
+    );
   });
 });
