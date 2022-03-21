@@ -9,7 +9,8 @@ type WrapperProps = { hasIcon: boolean } & Pick<
 const wrapperModifiers = {
   withIcon: (theme: DefaultTheme) => css`
     svg {
-      width: 1.5rem & + span {
+      width: 1.5rem;
+      & + span {
         margin-left: ${theme.spacings.xxsmall};
       }
     }

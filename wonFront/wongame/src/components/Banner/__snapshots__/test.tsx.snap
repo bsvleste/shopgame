@@ -68,7 +68,7 @@ exports[`Banner shoud render the carrectly 1`] = `
   font-weight: 600;
 }
 
-@media (max-width:1170px) {
+@media (max-width:768px) {
   .c0 .sc-gtsrHT {
     right: 0;
   }

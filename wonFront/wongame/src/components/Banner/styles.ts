@@ -3,7 +3,7 @@ import media from 'styled-media-query';
 import * as RibbonStyles from 'components/Ribbon/styles';
 export const Wrapper = styled.main`
   position: relative;
-  ${media.lessThan('large')`
+  ${media.lessThan('medium')`
     ${RibbonStyles.Wrapper}{
       right: 0;
       &::before {

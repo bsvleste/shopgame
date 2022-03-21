@@ -30,5 +30,6 @@ withIcon.args = {
 asLink.args = {
   size: 'large',
   children: 'Buy Now',
-  as: 'a'
+  as: 'a',
+  href: '/link'
 };
