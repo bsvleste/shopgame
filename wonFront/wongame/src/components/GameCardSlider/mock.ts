@@ -1,8 +1,4 @@
-import 'match-media-mock';
-import GameCardSlider from '.';
-import { renderWhitTheme } from 'utils/test/helpers';
-
-const items = [
+export default [
   {
     title: 'Population Zero',
     developer: 'Rockstar Games',
@@ -37,12 +33,12 @@ const items = [
     img: 'https://source.unsplash.com/user/willianjusten/300x144',
     price: 'R$ 235,00',
     promotionalPrice: 'R$ 215,00'
+  },
+  {
+    title: 'Population Zero',
+    developer: 'Rockstar Games',
+    img: 'https://source.unsplash.com/user/willianjusten/300x145',
+    price: 'R$ 235,00',
+    promotionalPrice: 'R$ 215,00'
   }
 ];
-
-describe('<GameSlider />', () => {
-  it('should render with 4 active items', () => {
-    const { container } = renderWhitTheme(<GameCardSlider items={items} />);
-    expect(container.querySelectorAll('.slick-active')).toHaveLength(4);
-  });
-});
