@@ -4,7 +4,7 @@ export type HeadingProps = {
   color?: 'white' | 'black';
   lineLeft?: boolean;
   lineBottom?: boolean;
-  size?: 'small' | 'medium';
+  size?: 'small' | 'medium' | 'huge';
   lineColor?: LineColors;
 };
 export type LineColors = 'primary' | 'secondary';

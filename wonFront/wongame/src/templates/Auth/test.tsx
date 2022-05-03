@@ -2,6 +2,7 @@ import { screen } from '@testing-library/react';
 import Auth from '.';
 import 'jest-styled-components';
 import { renderWhitTheme } from 'utils/test/helpers';
+
 describe('Auth', () => {
   it('shoud render logos, title,children', () => {
     renderWhitTheme(

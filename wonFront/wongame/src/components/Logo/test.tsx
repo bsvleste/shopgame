@@ -1,9 +1,13 @@
-import { screen, render } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { renderWhitTheme } from '../../utils/test/helpers';
 import 'jest-styled-components';
 import Logo from '.';
 
 describe('Logo', () => {
+  it('should render the logo with id passse', () => {
+    const { container } = renderWhitTheme(<Logo id="myId" />);
+    expect(container.querySelector('#a_myId')).toBeInTheDocument();
+  });
   it('shoud render a whuite label by default', () => {
     //renderizar o componentes 'render'
     renderWhitTheme(<Logo />);
