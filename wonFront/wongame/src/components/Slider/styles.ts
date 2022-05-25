@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Wrapper = styled.section`
   .slick-slider {
     position: relative;
-
     display: block;
     box-sizing: border-box;
 
